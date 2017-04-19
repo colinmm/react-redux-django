@@ -1,0 +1,12 @@
+{% load render_bundle from webpack_loader %}
+{% load static from staticfiles %}
+<html>
+   <head>
+      <title>App</title>
+   </head>
+   <body>
+      <div id="App" class="container-fluid"></div>
+      {% render_bundle 'vendors' %}
+      {% render_bundle 'App' %}   
+   </body>
+</html>
