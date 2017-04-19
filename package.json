@@ -1,5 +1,5 @@
 {
-  "name": "webrush",
+  "name": "react-redux-django",
   "version": "0.0.1",
   "devDependencies": {
     "babel": "^6.5.2",

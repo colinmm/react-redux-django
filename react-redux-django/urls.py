@@ -5,4 +5,6 @@ import views
 
 urlpatterns = [
 	url(r'^/$', views.main),
+    url(r'^jobs$', views.main),
+    url(r'^all$', views.main),   
 ]
