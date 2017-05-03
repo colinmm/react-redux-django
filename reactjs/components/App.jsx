@@ -1,17 +1,12 @@
 import React from 'react';
 
-class App extends React.Component {
+const App = (props) => {
 
-   render() {
-
-        console.log(this.props);
-
-      return (
-         <div>   
-            { this.props.data }      
-         </div>
-      )
-   }
-};
+    return (
+        <div>   
+            <span>{ props.data.message }</span>
+        </div>
+   )
+}
 
 export default App;

@@ -31,6 +31,7 @@ const mapStateToProps = (state) => {
     
     return {
         state,
+        isFetching : data.isFetching,
         data : data.data,
     };
 };

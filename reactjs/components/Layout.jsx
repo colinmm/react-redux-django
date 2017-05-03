@@ -1,15 +1,14 @@
 import React from 'react'
 
-class Layout extends React.Component {
-   render() {
-      return (
-         <div>
+const Layout = (props) => {
+
+    return (
+        <div>
             <main>
-               { this.props.children }
+               { props.children }
             </main>
          </div>
-      )
-   }
+   )
 }
 
 export default Layout;
