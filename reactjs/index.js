@@ -24,5 +24,5 @@ ReactDOM.render(
          </Router>
       </Provider>
    </div>,
-   document.getElementById('App')
+   document.getElementById('AppTest')
 );

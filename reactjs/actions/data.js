@@ -9,10 +9,7 @@ export const DATA = createTypes('DATA', [
 const receiveData = (json) => createAction(DATA.FETCH_SUCCESS,json)
 
 export function requestData() {
-    const json = [{ firstName:'colin', lastName:'mather', age:'31' },
-                  { firstName:'naoko', lastName:'hoshi', age:'30' },
-                  { firstName:'chris', lastName:'gristle', age:'32' },
-                  { firstName:'chumsie', lastName:'cat', age:'???'}];
+    const json = ['hello world!'];
     return dispatch => {
         dispatch(receiveData(json));
     }

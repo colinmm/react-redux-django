@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import * as data from '../actions/data';
 import App from '../components/App';
 
 class AppContainer extends React.Component {
@@ -10,13 +11,17 @@ class AppContainer extends React.Component {
 
     render() {
 
-        console.log(props);
-
         const { props } = this;
 
-        return (
-            <App data={ props.data } />
-        );
+        if(props.isFetching) {
+            return (
+                <div>Loading...</div>
+           )
+        } else {
+            return (
+                <App data={ props.data } />
+            );
+        }
     }
 }
 
@@ -26,7 +31,7 @@ const mapStateToProps = (state) => {
     
     return {
         state,
-        data : data,
+        data : data.data,
     };
 };
 
@@ -37,4 +42,4 @@ const mapDispatchToProps = (dispatch, props) => ({
 export default connect(
     mapStateToProps,
     mapDispatchToProps,
-)(App);
+)(AppContainer);

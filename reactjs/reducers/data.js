@@ -9,13 +9,13 @@ function data(state = initialState, action = {}) {
     switch (action.type) {
         case DATA.FETCH_SUCCESS:            
             return {
-                // ...state,
+                ...state,
                 isFetching : false,
                 data       : action.payload,
             }
         case DATA.FETCH_ERROR:
             return {
-                // ...state,
+                ...state,
                 isFetching : false,
             }
         default:

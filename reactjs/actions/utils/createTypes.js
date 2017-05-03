@@ -1,5 +1,5 @@
 const createTypes = (base, types) => types.reduce((acc, type) => ({
-    // ...acc,
+    ...acc,
     [type]: `APP/${ base }/${ type }`,
 }), {});
 

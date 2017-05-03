@@ -42,7 +42,8 @@ module.exports = {
   			loader: ['babel'],
         query: {
           cacheDirectory: true,
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015'],
+          plugins: ['transform-es2015-destructuring', 'transform-object-rest-spread']
         }
   		}
   	] 
