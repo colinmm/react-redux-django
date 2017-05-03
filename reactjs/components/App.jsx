@@ -1,15 +1,15 @@
 import React from 'react';
 
-class Jobs extends React.Component {
+class App extends React.Component {
 
    render() {
 
       return (
          <div>   
-            Hello world!      
+            Hellooo world!      
          </div>
       )
    }
 };
 
-export default Jobs;
+export default App;
